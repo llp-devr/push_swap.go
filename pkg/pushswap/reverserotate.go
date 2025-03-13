@@ -6,21 +6,15 @@
 
 package pushswap
 
-import (
-	"fmt"
-	"strconv"
-	"strings"
-)
-
-func RRA(ps *PushSwap) {
+func RRA(ps *Stacks) {
 	reverseRotate(&ps.stackA)
 }
 
-func RRB(ps *PushSwap) {
+func RRB(ps *Stacks) {
 	reverseRotate(&ps.stackB)
 }
 
-func RRR(ps *PushSwap) {
+func RRR(ps *Stacks) {
 	reverseRotate(&ps.stackA)
 	reverseRotate(&ps.stackB)
 }

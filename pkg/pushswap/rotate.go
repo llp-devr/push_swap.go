@@ -6,15 +6,15 @@
 
 package pushswap
 
-func RA(ps *PushSwap) {
+func RA(ps *Stacks) {
 	rotate(&ps.stackA)
 }
 
-func RB(ps *PushSwap) {
+func RB(ps *Stacks) {
 	rotate(&ps.stackB)
 }
 
-func RR(ps *PushSwap) {
+func RR(ps *Stacks) {
 	rotate(&ps.stackA)
 	rotate(&ps.stackB)
 }

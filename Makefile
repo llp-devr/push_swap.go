@@ -17,7 +17,7 @@ clean:
 .PHONY: push_swap
 push_swap:
 	@echo "Building the project..."
-	go build -o push_swap ./cmd/push_swap
+	go build -o push_swap ./cmd/pushswap
 
 .PHONY: fmt
 fmt:

@@ -6,13 +6,13 @@
 
 package pushswap
 
-type PushSwap struct {
+type Stacks struct {
 	stackA []int
 	stackB []int
 }
 
-func NewPushSwap(stackA []int) *PushSwap {
-	return &PushSwap{
+func NewStacks(stackA []int) Stacks {
+	return Stacks{
 		stackA: stackA,
 		stackB: []int{},
 	}

@@ -6,21 +6,15 @@
 
 package pushswap
 
-import (
-	"fmt"
-	"strconv"
-	"strings"
-)
-
-func SA(ps *PushSwap) {
+func SA(ps *Stacks) {
 	swap(&ps.stackA)
 }
 
-func SB(ps *PushSwap) {
+func SB(ps *Stacks) {
 	swap(&ps.stackB)
 }
 
-func SS(ps *PushSwap) {
+func SS(ps *Stacks) {
 	swap(&ps.stackA)
 	swap(&ps.stackB)
 }
