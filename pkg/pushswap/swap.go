@@ -6,17 +6,25 @@
 
 package pushswap
 
+import "fmt"
+
 func SA(ps *Stacks) {
-	swap(&ps.stackA)
+	fmt.Println("sa")
+
+	swap(&ps.StackA)
 }
 
 func SB(ps *Stacks) {
-	swap(&ps.stackB)
+	fmt.Println("sb")
+
+	swap(&ps.StackB)
 }
 
 func SS(ps *Stacks) {
-	swap(&ps.stackA)
-	swap(&ps.stackB)
+	fmt.Println("ss")
+	
+	swap(&ps.StackA)
+	swap(&ps.StackB)
 }
 
 func swap(stack *[]int) {

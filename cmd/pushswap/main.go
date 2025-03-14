@@ -12,6 +12,7 @@ import (
 
 	"github.com/llp-devr/push_swap.go/pkg/converter"
 	"github.com/llp-devr/push_swap.go/pkg/pushswap" 
+	"github.com/llp-devr/push_swap.go/internal/solve" 
 )
 
 func main() {
@@ -29,7 +30,7 @@ func main() {
 
 	stacks := pushswap.NewStacks(stack)
 
-	pushswap.PA(&stacks)
+	solve.Solve(&stacks)
 
 	fmt.Println("Message:", stacks)
 }

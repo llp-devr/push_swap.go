@@ -6,21 +6,29 @@
 
 package pushswap
 
+import "fmt"
+
 func RRA(ps *Stacks) {
-	reverseRotate(&ps.stackA)
+	fmt.Println("rra")
+	
+	reverseRotate(&ps.StackA)
 }
 
 func RRB(ps *Stacks) {
-	reverseRotate(&ps.stackB)
+	fmt.Println("rrb")
+
+	reverseRotate(&ps.StackB)
 }
 
 func RRR(ps *Stacks) {
-	reverseRotate(&ps.stackA)
-	reverseRotate(&ps.stackB)
+	fmt.Println("rrr")
+	
+	reverseRotate(&ps.StackA)
+	reverseRotate(&ps.StackB)
 }
 
 func reverseRotate(stack *[]int) {
 	if len(*stack) >= 2 {
-		*stack = append([]int{(*stack)[len(*stack)-1]}, (*stack)[:len(*stack)-1]...)
+		(*stack) = append([]int{(*stack)[len(*stack)-1]}, (*stack)[:len(*stack)-1]...)
 	}
 }

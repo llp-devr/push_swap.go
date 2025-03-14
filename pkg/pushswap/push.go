@@ -11,16 +11,17 @@ import "fmt"
 func PA(ps *Stacks) {
 	fmt.Println("pa")
 
-	if len(ps.stackB) > 0 {
-		ps.stackA = append([]int{ps.stackB[0]}, ps.stackA...)
-		ps.stackB = ps.stackB[1:]
+	if len(ps.StackB) > 0 {
+		(*ps).StackA = append([]int{ps.StackB[0]}, ps.StackA...)
+		(*ps).StackB = ps.StackB[1:]
 	}
 }
 
 func PB(ps *Stacks) {
 	fmt.Println("pb")
-	if len(ps.stackA) > 0 {
-		ps.stackB = append([]int{ps.stackA[0]}, ps.stackB...)
-		ps.stackA = ps.stackA[1:]
+
+	if len(ps.StackA) > 0 {
+		(*ps).StackB = append([]int{ps.StackA[0]}, ps.StackB...)
+		(*ps).StackA = ps.StackA[1:]
 	}
 }

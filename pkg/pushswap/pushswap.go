@@ -7,13 +7,13 @@
 package pushswap
 
 type Stacks struct {
-	stackA []int
-	stackB []int
+	StackA []int
+	StackB []int
 }
 
-func NewStacks(stackA []int) Stacks {
+func NewStacks(stack []int) Stacks {
 	return Stacks{
-		stackA: stackA,
-		stackB: []int{},
+		StackA: stack,
+		StackB: []int{},
 	}
 }
