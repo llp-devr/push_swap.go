@@ -4,16 +4,16 @@
 //
 // SPDX-License-Identifier: MIT
 
-package solve 
+package solve
 
 func Max(stack []int) int {
 	max := stack[0]
 	for _, value := range stack {
 		if max < value {
 			max = value
-    }
+		}
 	}
-  return max
+	return max
 }
 
 func MaxPos(stack []int) int {
@@ -23,7 +23,7 @@ func MaxPos(stack []int) int {
 		if max < value {
 			max = value
 			pos = idx
-    }
+		}
 	}
-  return pos
+	return pos
 }

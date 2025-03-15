@@ -4,9 +4,9 @@
 //
 // SPDX-License-Identifier: MIT
 
-package solve 
+package solve
 
-import "github.com/llp-devr/push_swap.go/pkg/pushswap" 
+import "github.com/llp-devr/push_swap.go/pkg/pushswap"
 
 func SortTwo(ps *pushswap.Stacks) {
 	pos := MaxPos(ps.StackA)

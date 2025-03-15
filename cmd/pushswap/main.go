@@ -10,9 +10,9 @@ import (
 	"os"
 	"strings"
 
+	"github.com/llp-devr/push_swap.go/internal/solve"
 	"github.com/llp-devr/push_swap.go/pkg/converter"
-	"github.com/llp-devr/push_swap.go/pkg/pushswap" 
-	"github.com/llp-devr/push_swap.go/internal/solve" 
+	"github.com/llp-devr/push_swap.go/pkg/pushswap"
 )
 
 func main() {

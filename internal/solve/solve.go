@@ -4,9 +4,9 @@
 //
 // SPDX-License-Identifier: MIT
 
-package solve 
+package solve
 
-import "github.com/llp-devr/push_swap.go/pkg/pushswap" 
+import "github.com/llp-devr/push_swap.go/pkg/pushswap"
 
 func Solve(ps *pushswap.Stacks) {
 	stackLen := len(ps.StackA)
@@ -16,6 +16,6 @@ func Solve(ps *pushswap.Stacks) {
 	} else if stackLen == 3 {
 		SortThree(ps)
 	} else {
-		RadixSort(ps)
+		TurkishSort(ps)
 	}
 }

@@ -22,7 +22,7 @@ func SB(ps *Stacks) {
 
 func SS(ps *Stacks) {
 	fmt.Println("ss")
-	
+
 	swap(&ps.StackA)
 	swap(&ps.StackB)
 }

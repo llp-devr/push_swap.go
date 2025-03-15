@@ -10,7 +10,7 @@ import "fmt"
 
 func RRA(ps *Stacks) {
 	fmt.Println("rra")
-	
+
 	reverseRotate(&ps.StackA)
 }
 
@@ -22,7 +22,7 @@ func RRB(ps *Stacks) {
 
 func RRR(ps *Stacks) {
 	fmt.Println("rrr")
-	
+
 	reverseRotate(&ps.StackA)
 	reverseRotate(&ps.StackB)
 }

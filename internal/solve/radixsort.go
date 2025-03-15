@@ -4,9 +4,9 @@
 //
 // SPDX-License-Identifier: MIT
 
-package solve 
+package solve
 
-import "github.com/llp-devr/push_swap.go/pkg/pushswap" 
+import "github.com/llp-devr/push_swap.go/pkg/pushswap"
 
 func RadixSort(ps *pushswap.Stacks) {
 	bits := bitLenght(Max(ps.StackA))
@@ -42,7 +42,7 @@ func RadixSort(ps *pushswap.Stacks) {
 func bitLenght(number int) int {
 	lenght := 0
 	for number > 0 {
-	  number >>= 1
+		number >>= 1
 		lenght += 1
 	}
 	return lenght

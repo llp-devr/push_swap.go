@@ -25,12 +25,12 @@ func ToIntArray(strs []string) ([]int, error) {
 
 	sorted := make([]int, len(list))
 	copy(sorted, list)
-  sort.Ints(sorted)
+	sort.Ints(sorted)
 
 	var stack []int
 	for _, el := range list {
 		stack = append(stack, findIndex(sorted, el))
-	} 
+	}
 
 	return stack, nil
 }
