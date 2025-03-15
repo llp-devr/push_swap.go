@@ -7,8 +7,8 @@
 package main
 
 import (
-	"fmt"
 	"os"
+	"strings"
 
 	"github.com/llp-devr/push_swap.go/pkg/converter"
 	"github.com/llp-devr/push_swap.go/pkg/pushswap" 
@@ -16,14 +16,21 @@ import (
 )
 
 func main() {
+	var err error
+	var stack []int
+
 	args := os.Args[1:]
 
-	if len(args) != 1 {
-		fmt.Println("Error: Please provide exactly one argument.")
+	if len(args) == 0 {
 		os.Exit(1)
 	}
 
-	stack, err := converter.ToIntArray(args[0])
+	if len(args) == 1 {
+		nbrs := strings.Fields(args[0])
+		stack, err = converter.ToIntArray(nbrs)
+	} else {
+		stack, err = converter.ToIntArray(args)
+	}
 	if err != nil {
 		os.Exit(1)
 	}
@@ -31,6 +38,4 @@ func main() {
 	stacks := pushswap.NewStacks(stack)
 
 	solve.Solve(&stacks)
-
-	fmt.Println("Message:", stacks)
 }

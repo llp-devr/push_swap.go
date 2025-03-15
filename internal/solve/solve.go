@@ -15,5 +15,7 @@ func Solve(ps *pushswap.Stacks) {
 		SortTwo(ps)
 	} else if stackLen == 3 {
 		SortThree(ps)
+	} else {
+		RadixSort(ps)
 	}
 }
